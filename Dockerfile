@@ -1,4 +1,4 @@
-FROM jdk:8
+FROM jdk:11
 VOLUME /tmp
 ADD target/enkins-demo-0.0.1-SNAPSHOT.jar app.jar
 EXPOSE 9090
