@@ -1,4 +1,4 @@
 FROM openjdk:11
-ADD target/jenkins-demo-0.0.1-SNAPSHOT.jar app.jar
+ADD target/*.jar app.jar
 EXPOSE 9090
 EXPOSE 1614ENTRYPOINT["java","-Djava.security.egd=file:/dev/./urandom","-jar","/app.jar","--spring.profiles.active=prd"]
